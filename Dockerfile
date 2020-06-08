@@ -21,12 +21,6 @@ RUN apt-get -yq update && \
 RUN git config --global user.email "ci@code-fabrik.com"
 RUN git config --global user.name "gitlab ci"
 
-RUN mkdir -p ~/.ssh
-RUN chmod 700 ~/.ssh
-RUN chmod 600 ~/.ssh/id_rsa
-RUN touch ~/.ssh/known_hosts
-RUN chmod 644 ~/.ssh/known_hosts
-
 ENV MAVEN_HOME /usr/share/maven
 ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 
