@@ -18,6 +18,7 @@ RUN apt-get -yq update && \
     git \
     rename \
     rsync \
+    zip \
     && rm -rf /tmp/* /var/cache/apk/*
 
 RUN git config --global user.email "ci@code-fabrik.com"
